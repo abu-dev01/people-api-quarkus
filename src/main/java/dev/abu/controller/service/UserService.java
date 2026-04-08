@@ -32,4 +32,9 @@ public class UserService {
         //User.persist(existingUser);
         return existingUser;
     }
+
+    public void deleteUser(UUID id){
+        var existingUser = findUserById(id);
+        User.deleteById(existingUser.getId());
+    }
 }
