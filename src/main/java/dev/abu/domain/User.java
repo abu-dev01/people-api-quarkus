@@ -1,4 +1,4 @@
-package dev.abu.controller.domain;
+package dev.abu.domain;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import jakarta.persistence.*;

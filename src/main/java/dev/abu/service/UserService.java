@@ -1,7 +1,7 @@
-package dev.abu.controller.service;
+package dev.abu.service;
 
-import dev.abu.controller.domain.User;
-import dev.abu.controller.exception.UserNotFoundException;
+import dev.abu.domain.User;
+import dev.abu.exception.UserNotFoundException;
 import jakarta.enterprise.context.ApplicationScoped;
 
 import java.util.List;

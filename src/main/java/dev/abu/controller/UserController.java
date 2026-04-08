@@ -1,7 +1,7 @@
 package dev.abu.controller;
 
-import dev.abu.controller.domain.User;
-import dev.abu.controller.service.UserService;
+import dev.abu.domain.User;
+import dev.abu.service.UserService;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.Response;
@@ -28,7 +28,7 @@ public class UserController {
 
     @GET
     public Response findAllUsers(@QueryParam("page") @DefaultValue("0") Integer page,
-                                 @QueryParam("pageSize") @DefaultValue("2") Integer pageSize){
+                                 @QueryParam("pageSize") @DefaultValue("10") Integer pageSize){
         return Response.ok(userService.findAllUsers(page, pageSize)).build();
     }
 

@@ -1,4 +1,4 @@
-package dev.abu.controller.exception;
+package dev.abu.exception;
 
 public class UserNotFoundException extends RuntimeException{
 

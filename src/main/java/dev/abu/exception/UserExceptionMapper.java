@@ -1,4 +1,4 @@
-package dev.abu.controller.exception;
+package dev.abu.exception;
 
 import jakarta.ws.rs.core.Response;
 import jakarta.ws.rs.ext.ExceptionMapper;
